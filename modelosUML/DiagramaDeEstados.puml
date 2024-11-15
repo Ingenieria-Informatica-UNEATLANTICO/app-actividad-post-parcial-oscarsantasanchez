@@ -1,0 +1,15 @@
+@startuml
+[*] --> InicioDelDia : Comienza el día
+
+InicioDelDia --> InicioRuta : Iniciar Ruta
+
+InicioRuta --> Parada : Llegar a Parada
+Parada --> RecogePasajero : Pasajero sube
+RecogePasajero --> SigueRuta : Continuar
+SigueRuta --> Parada : Próxima parada
+
+SigueRuta --> FinRuta : Terminar Ruta
+FinRuta --> InicioRuta : Reiniciar Ruta
+FinRuta --> FinDelDia : Termina el día
+FinDelDia --> [*] : Final del día
+@enduml
