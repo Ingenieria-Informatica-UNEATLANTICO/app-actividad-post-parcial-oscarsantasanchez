@@ -1,0 +1,22 @@
+@startuml
+[*] --> InicioDelDia : Comienza el día
+
+InicioDelDia --> InicioRuta : Iniciar Ruta
+
+InicioRuta --> SinPasajeros : Sin pasajeros
+SinPasajeros --> Parada : Llegar a Parada
+Parada --> RecogePasajero : Pasajero sube
+RecogePasajero --> EnMovimiento : Continuar en ruta
+EnMovimiento --> Parada : Próxima parada
+
+EnMovimiento --> Incidencia : Problema detectado
+Incidencia --> FinRuta : Ruta interrumpida
+Incidencia --> EnMovimiento : Problema resuelto
+
+EnMovimiento --> FinRuta : Terminar Ruta
+FinRuta --> [*] : No hay más rutas
+FinRuta --> InicioRuta : Reiniciar Ruta
+
+FinRuta --> FinDelDia : Evaluar si hay más rutas
+FinDelDia --> [*] : Final del día
+@enduml

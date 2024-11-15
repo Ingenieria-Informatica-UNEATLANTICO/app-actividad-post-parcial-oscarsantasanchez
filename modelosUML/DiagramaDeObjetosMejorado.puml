@@ -1,0 +1,44 @@
+@startuml
+class Vehículo {
+    tipo = "Autobús"
+}
+class Conductor {
+    nombre = "Andrés"
+}
+class Horario {
+    Frecuencia = "Cada 20'"
+}
+class Empresa {
+    Nombre ="Tus"
+}
+class Incidencia{
+    Tipo ="Fallo lector de tarjetas"
+} 
+class Tarifa {
+    Tipo = "Bono"
+    precio = 5€
+}
+class Servicio {
+    Tipo = "Diurno"
+}
+abstract class MetodoPago
+class Tarjeta
+class Efectivo
+class Pasajero {
+    Cantidad = 10
+}
+
+Vehículo --> Conductor : Tiene
+Vehículo --> Empresa : Pertenece
+Empresa --> Incidencia : Gestiona
+Conductor --> Horario : Sigue
+Conductor --> Pasajero : Recoge
+Pasajero --> Tarifa : Paga
+Tarifa --> Servicio : Depende
+Tarifa --> MetodoPago : Pagada con
+Pasajero --> Vehículo : Suben
+Servicio --> Horario : Programado en
+Incidencia --> Vehículo : Asociada a
+MetodoPago <|-- Tarjeta
+MetodoPago <|-- Efectivo
+@enduml
