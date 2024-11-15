@@ -1,53 +1,29 @@
-# Repo plantilla para exámenes [PRG*x*|EDA*x*|IDSW*x*]@gII.uneatlantico
+# Examen: Desarrollo de Modelo de Dominio
 
-*Este documento es una guía para la realización y entrega de las evaluaciones en las asignaturas PRGx, EDAx e IDSWx del Grado en Ingeniería Informática. Detalla la estructura del repositorio de entrega, los artefactos requeridos y los criterios de evaluación.*
+## Instrucciones
 
-## Enunciado del examen
+Desarrolla el modelo del dominio para Uno de los conceptos de la tabla incluida de conceptos presente. Su solución debe incluir los artefactos que considere necesarios, así como las iteraciones a las que le alcance el tiempo y las consideraciones que considere oportunas.
 
-En el repo de la asignatura, carpeta `/evaluaciones`, apartado del examen correspondiente.
 
-### Retos
+### Tabla de Conceptos
+| Sistema                                    | Descripción                                                                                                                                                                    | (Algunos) conceptos clave                              |
+|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| Un sistema de repos (tipo GitHub)          | Capture la gestión de código, colaboración y control de versiones. Incluya aspectos de permisos, workflows y automatización.                                                  | Documentos, Versiones, Pull Request, Branch, Workflow, Colaboración, Automatización. |
+| El tiempo                                  | Modele tanto aspectos objetivos como subjetivos del tiempo. Incluya conceptos de medición, percepción y experiencia temporal. Considere la causalidad, secuencialidad y simultaneidad. | Medición, Percepción, Causalidad, Secuencia, Simultaneidad, Duración. |
+| Un sistema de salud de un hospital         | Incluya conceptos como pacientes, profesionales médicos, historias clínicas, tratamientos, citas médicas, especialidades, centros de salud. Considere aspectos como la privacidad de datos, la gestión de urgencias y los protocolos médicos. | Paciente, Historia Clínica, Tratamiento, Protocolo Médico, Urgencia, Privacidad. |
+| Un sistema de transporte público de una ciudad | Incluya conceptos como rutas, vehículos, conductores, pasajeros, paradas, horarios, tarifas, tipos de abono. Considere aspectos como la planificación de rutas, la gestión de incidencias y los sistemas de pago. | Ruta, Horario, Flota, Incidencia, Tarifa, Servicio. |
+| Una plataforma de streaming                | Incluya conceptos como usuarios, contenidos, categorías, recomendaciones, perfiles, planes de suscripción, dispositivos. Considere aspectos como la gestión de derechos digitales, el control parental y la calidad del servicio. | Contenido, Perfil, Recomendación, Suscripción, Streaming, Calidad. |
+| El Yo (Self)                               | Modele la estructura y dinámica de la identidad personal. Considere aspectos psicológicos, sociales y experienciales. Incluya la evolución temporal y las diferentes dimensiones del ser. | Identidad, Consciencia, Estado Mental, Memoria, Experiencia, Desarrollo. |
 
-Indicados dentro del enunciado del examen.
 
-## Entrega del examen
+> **Nota:** El Concepto que he modelo ha sido **"Un sistema de transporte público de una ciudad"**
 
-En el repositorio destinado para tal fin en el examen.
+---
 
-### Artefactos
+## Documentación Adicional
 
-A continuación una lista de artefactos que habitualmente constituyen la entrega de un examen:
+Para una mejor comprensión del examen, puedes consultar los siguientes documentos:
 
-||||
-|-|-|-|
-|1|Archivo **README.md**|**Este archivo**, sobreescrito con su presentación de la propuesta de solución al examen.|
-|2|Código fuente|Proyecto ordenado dentro de la carpeta `/src`.|
-|3|Diagramas UML|Archivos fuente en la carpeta `/modelosUML`.|
-| ||Diagramas exportados en formato .svg en la carpeta `/images`. |
-|4|Imágenes|Si considera necesario incluir imágenes además de los diagramas, deben alojarse en la carpeta `/images` y estar referenciadas en el documento de entrega.|
-| ||Para diagramas use el formato .svg y para imágenes comunes, el formato .png.|
-|5|Documentación adicional|En la carpeta `/documents`.|
+- [Diagramas del Examen](/documents/README.md): Contiene los diagramas desarrollados como parte del modelo de dominio.
+- [Mejoras Realizadas - Examen Parcial Mejorado](/documents/ExamenParcialMejorado.md): Expone las mejoras implementadas en el modelo de dominio.
 
-### Qué se debe entregar
-
-- Los artefactos a entregar se indican en el examen de modo específico. Se especificará cuales son obligatorios.
-- Usted tiene la libertad de decidir si incluir o no los elementos que no sean explícitamente requeridos en el enunciado del examen. Su inclusión es facultativa y debe basarse en su criterio sobre la relevancia o aporte que estos elementos puedan tener para el trabajo presentado.
-- Todos los artefactos han de quedar adecuadamente relacionados desde el artefacto 1.
-
-## Se valorará
-
-- Proceso de creación.
-- Exactitud en la solución.
-- Adecuado reparto de responsabilidades.
-- Código limpio.
-- Claridad del código.
-- Gestión de estados.
-- Y, por supuesto, el uso de los temas vistos en clase.
-
-### Se propone/sugiere
-
-|||
-|-|-|
-|Planificación| Planifique su enfoque utilizando diagramas, esquemas, estados y/o pseudocódigo. Lo puede aportar en su repo, como diagrama o como imagen (foto), en la carpeta adecuada y enlazado desde el README.md|
-|Documentación|En dicho README.md puede explicar cómo cada parte contribuye a la solución general. Y como hemos debatido ampliamente, evite los comentarios a su código: ¡que el código se autoexplique!.|
-|Delegación de responsabilidades|Dedíquele un momento a reflexionar sobre cómo reparte las responsabilidades entre los diferentes artefactos y cómo esto afecta la claridad y eficiencia de su solución.|
