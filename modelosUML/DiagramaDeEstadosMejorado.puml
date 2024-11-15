@@ -3,6 +3,8 @@
 
 InicioDelDia --> InicioRuta : Iniciar Ruta
 
+state choice <<choice>>
+
 InicioRuta --> SinPasajeros : Sin pasajeros
 SinPasajeros --> Parada : Llegar a Parada
 Parada --> RecogePasajero : Pasajero sube
@@ -14,9 +16,10 @@ Incidencia --> FinRuta : Ruta interrumpida
 Incidencia --> EnMovimiento : Problema resuelto
 
 EnMovimiento --> FinRuta : Terminar Ruta
-FinRuta --> [*] : No hay más rutas
-FinRuta --> InicioRuta : Reiniciar Ruta
 
-FinRuta --> FinDelDia : Evaluar si hay más rutas
+FinRuta --> choice : ¿Hay más rutas?
+choice --> InicioRuta : Sí
+choice --> FinDelDia : No
+
 FinDelDia --> [*] : Final del día
 @enduml
